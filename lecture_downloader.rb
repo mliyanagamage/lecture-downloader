@@ -18,5 +18,5 @@ contents.css('a').map do |link|
 end
 
 pdf.each do |file|
-  `wget #{@url}#{file} --directory-prefix=#{@destination}`
+  `wget #{@url}#{file} --directory-prefix=#{@destination}` unless File.exist?("#{@destination}/#{file}")
 end
