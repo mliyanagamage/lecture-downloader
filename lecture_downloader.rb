@@ -4,6 +4,7 @@ require 'open-uri'
 require 'nokogiri'
 
 @whitelist = [ "pdf" ]
+@blacklist = []
 @destination = "./test"
 @url = "http://cs.anu.edu.au/student/comp4610/notes/"
 
@@ -12,8 +13,11 @@ contents = Nokogiri::HTML(open(@url))
 pdf = Array.new
 
 contents.css('a').map do |link|
-  if @whitelist.any? { |w| link.attributes["href"].value.include? w }
-    pdf << link.attributes["href"].value
+  
+  target = link.attributes["href"].value
+  
+  if @whitelist.any? { |w| target.include? w }
+    pdf << target unless @blacklist.any? { |b| target.include? b }
   end
 end
 
