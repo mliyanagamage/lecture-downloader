@@ -23,7 +23,7 @@ Requires the following gems:
 
 ## Special Thanks
 
-Special thanks to Darren Bishop for the idea to create this script. He will not be using this one since he has an irrational hatred of Ruby and so has created his own in ugly, ugly Bash. But thank you nevertheless.
+Special thanks to [Darren Bishop](https://github.com/dbishop1) for the idea to create this script. He will not be using this one since he has an irrational hatred of Ruby and so has created his own in ugly, ugly Bash. But thank you nevertheless.
 
 
 ## Future
