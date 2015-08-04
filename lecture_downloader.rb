@@ -62,7 +62,7 @@ pdf.each_with_index do |file,index|
 end
 
 if download_count == 0
-  print \n"No New Files Found\n".red
+  print "\nNo New Files Found\n".red
   exit 0
 else
   print "\n#{count} files Downloaded Successfully\n".blue
