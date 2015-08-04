@@ -28,6 +28,5 @@ Special thanks to [Darren Bishop](https://github.com/dbishop1) for the idea to c
 
 ## Future
 
-- [ ] Add a Gemfile
 - [ ] More Easy Configuration
 - [ ] Something else I think of
